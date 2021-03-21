@@ -1,7 +1,7 @@
 {
-  "name": "node-js-getting-started",
+  "name": "observable-oauth-salesforce",
   "version": "0.3.0",
-  "description": "A sample Node.js app using Express 4",
+  "description": "Simple server that provides oAuth 2.0 access to salesforce from Observable",
   "engines": {
     "node": "14.x"
   },
@@ -11,8 +11,12 @@
     "test": "node test.js"
   },
   "dependencies": {
+    "client-sessions": "^0.8.0",
+    "cookie-parser": "^1.4.5",
     "ejs": "^3.1.5",
-    "express": "^4.15.2"
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "salesforce-oauth-express-middleware": "^1.0.2"
   },
   "devDependencies": {
     "got": "^11.3.0",
