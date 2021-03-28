@@ -1,0 +1,26 @@
+{
+  "name": "Observable OAuth Salesforce",
+  "description": "A simple integration to login to Salesforce from ObservableHQ",
+  "repository": "https://github.com/paulroth3d/observable-oauth-salesforce",
+  "keywords": ["salesforce", "observablehq"],
+  "env": {
+    "OAUTH_CLIENT_ID": {
+      "description": "The salesforce connected app oauth client id",
+      "required": true
+    },
+    "OAUTH_CLIENT_SECRET": {
+      "description": "The salesforce connected app oauth client secret",
+      "required": true
+    },
+    "OAUTH_REDIRECT_URI": {
+      "description": "The redirect URI to use for this app",
+      "required": true,
+      "value": "https://APP_NAME.herokuapp.com/oauth/callback"
+    },
+    "OBSERVABLE_DOMAIN": {
+      "description": "The domain of the observable notebook that access will be granted to",
+      "required": true,
+      "value": "https://OBSERVABLE_USERNAME.static.observableusercontent.com"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head
+<body>
+
+<script type='text/javascript'>
+
+    const sfoauth = JSON.parse('<%- sfoauthJSON %>');
+    setInterval(() => window.opener.postMessage({type: "complete", time: new Date(), sfoauth}, "<%- observableDomain %>"), 1000);
+
+</script>
+
+</body>
+</html>
