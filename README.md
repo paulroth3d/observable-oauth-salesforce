@@ -95,7 +95,11 @@ Click the following button to create a Heroku app
 
 Note that a number of the fields that are provided are from the connected app used in step 1.
 
+-----
+
 ![Screenshot of the Heroku App Config](doc/img/HerokuAppConfig.png)
+
+-----
 
 <table>
     <tr>
@@ -129,17 +133,17 @@ Note that a number of the fields that are provided are from the connected app us
     </tr>
 </table>
 
+### Click Deploy App Button
+
+This will then show the log as the heroku app is deployed.
+
 ### NOTE: if you need to change these later
 
 You can always find the app under heroku, and 'Reveal Config Vars' to see the existing values or changing them.
 
 Changing the values will restart your dyno with those new values.
 
-### Deploy App
-
-This will then show the log as the heroku app is deployed.
-
-## Create an Observable Notebook
+## Step 4 - Create an Observable Notebook
 
 The simplest is simply to clone the example notebook here:
 
