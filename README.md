@@ -12,10 +12,10 @@ There are just 4 steps needed, and can be done in 10 minutes or less.
 
 (and most of that is just waiting)
 
-1. Setup a Connected App to use for authentication in.
-2. Allow CORS for your Observable Notebook.
-2. Use the Heroku Button to implement the login flow
-3. Create / Duplicate an Observable Notebook to use the login flow.
+1. [Setup a Connected App to use for authentication in.](#step-1---setup-a-connected-app)
+2. [Allow CORS for your Observable Notebook.](#step-2---setup-cors-for-your-observable-notebook)
+3. [Use the Heroku Button to implement the login flow](#step-3---heroku-button-to-create-instance)
+4. [Create / Duplicate an Observable Notebook to use the login flow](#step-4---create-an-observable-notebook)
 
 ## Step 1 - Setup a Connected App
 
@@ -145,15 +145,22 @@ Changing the values will restart your dyno with those new values.
 
 ## Step 4 - Create an Observable Notebook
 
-The simplest is simply to clone the example notebook here:
+Within any notebook you'd like, create a cell somewhere to include the sfLoginForm function
+
+`import {sfLoginForm} from '@paulroth3d/observable-salesforce-authentication'`
+
+Then, create a cell to use the login form, and store the [JsForce connection](https://jsforce.github.io) with the address of your heroku instance.
+
+`viewof conn = sfLoginForm('https://your-heroku-instance.herokuapp.com');`
+
+For more, or to see an example, please visit:
 
 [https://observablehq.com/@paulroth3d/observable-salesforce-authentication](https://observablehq.com/@paulroth3d/observable-salesforce-authentication)
-
-Alternatively, you only need the items in the cells above the horizontal line (the text says which cells)
 
 Note that you can see all the commented source code used simply by clicking in the 'gutter' on the left of any cell.
 
 # See more
 
+* [Demo - https://observablehq.com/@paulroth3d/observable-salesforce-authentication](https://observablehq.com/@paulroth3d/observable-salesforce-authentication)
 * [Observable OAuth](https://talk.observablehq.com/t/best-practice-for-oauth-popup-prompts/684)
 * [Observable Popup](https://observablehq.com/d/24e8315897f10fdb)
